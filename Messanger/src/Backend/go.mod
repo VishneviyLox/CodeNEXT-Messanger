@@ -1,4 +1,4 @@
-module Messanger
+module Messanger/src/Backend
 
 go 1.26.5
 

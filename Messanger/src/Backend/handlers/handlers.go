@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	config "Messanger/Backend/config"
-	db "Messanger/Backend/database"
-	model "Messanger/Backend/models"
+	config "Messanger/src/Backend/config"
+	db "Messanger/src/Backend/database"
+	model "Messanger/src/Backend/models"
 	"fmt"
 	"net/http"
 

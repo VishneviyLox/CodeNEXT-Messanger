@@ -1,8 +1,8 @@
 package main
 
 import (
-	dataBase "Messanger/Backend/database"
-	handlers "Messanger/Backend/handlers"
+	dataBase "Messanger/src/Backend/database"
+	handlers "Messanger/src/Backend/handlers"
 
 	"github.com/gin-gonic/gin"
 )

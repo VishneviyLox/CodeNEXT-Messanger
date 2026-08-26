@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import './styles/AuthPage.css'
+import { useNavigate } from 'react-router-dom'
+
 
 export default function AuthPage(){
 
     const [isActive, setIsActive] = useState(false)
+    const navigate = useNavigate()
 
     return(
         <>
@@ -25,7 +28,7 @@ export default function AuthPage(){
         <input type="text" placeholder="Вставьте ссылку для фотографии профиля" />
         <input type="date" placeholder="Дата рождения" />
         <input type="password" placeholder="Пароль" />
-        <button>Предпросмотр</button>
+        <button onClick={() => navigate('/auth/preview')}>Предпросмотр</button>
         <button>Зарегистрироваться</button>
       </form>
     </div>

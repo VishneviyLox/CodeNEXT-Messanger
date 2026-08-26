@@ -1,7 +1,7 @@
 package database
 
 import (
-	config "Messanger/Backend/config"
+	config "Messanger/src/Backend/config"
 	"database/sql"
 	_ "github.com/lib/pq"
 )
@@ -16,7 +16,6 @@ func ConnectDB(){
 
 	if err != nil{
 		panic(config.Red + err.Error() + config.Reset)
-		return
 	}
 	 
 }
