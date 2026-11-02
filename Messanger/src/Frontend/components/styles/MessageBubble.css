@@ -1,0 +1,71 @@
+.message-bubble {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    max-width: 75%;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Аватарка в сообщении */
+.msg-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Контент пузырька */
+.msg-content {
+    padding: 10px 14px;
+    border-radius: 18px;
+    position: relative;
+    word-wrap: break-word;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.msg-text {
+    margin: 0 0 4px 0;
+    color: inherit;
+}
+
+.msg-time {
+    font-size: 11px;
+    opacity: 0.7;
+    text-align: right;
+    display: block;
+}
+
+/* Мои сообщения (справа) */
+.my-message {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.my-message .msg-content {
+    background-color: var(--accent-color, #4a90e2);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.my-message .msg-time {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Сообщения собеседника (слева) */
+.partner-message {
+    align-self: flex-start;
+}
+
+.partner-message .msg-content {
+    background-color: var(--bg-primary, #ffffff);
+    color: var(--text-primary, #333);
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
